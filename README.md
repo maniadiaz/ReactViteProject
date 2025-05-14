@@ -1,12 +1,38 @@
-# React + Vite
+# 🚀 Proyecto React - Enrutamiento y Navegación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una práctica para aprender a utilizar **React** junto con **React Router**, integrando navegación entre distintas páginas, componentes reutilizables y control de versiones con GitHub. Ademas se agrego la utilizacioón de **React Google Maps Api** para poder ubicar la Facultad de Informactica de la UAS Mazatlán
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rutas implementadas
 
-## Expanding the ESLint configuration
+- `/` -> Página de inicio con bienvenida y botón de navegación.
+- `/about` -> Información sobre el creador del proyecto.
+- `/contact` -> Formulario de contacto (con campos deshabilitados como ejemplo visual).
+- `/work ` -> Muestra todo los trabajos que se hizo en este proyecto.
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologías usadas
+
+- React
+- React Router DOM
+- Google-Maps-Api
+- Material UI (para estilos)
+- Git & GitHub
+
+---
+
+## Como Arrancar el proyecto
+- **Paso 1** Entrar a la carpeta reactActivity con el comando "cd reactActivity"
+- **Paso 2** Escribes "npm install"
+- **Paso 3** agregas un nuevo archivo llamado .env en la cual vas a tener que agregar tu keys en esa "VITE_GOOGLE_MAPS_API_KEY=(aqui va tu keys)"
+- **Paso 4** corre el programa con "npm run dev"
+-- **Paso 5** listo tu programa ya corrio entra al navegador y entra al navegador http://localhost:5173/
+
+##  Autor
+
+- **Nombre:** Alexis Díaz  
+- **Universidad:** Universidad Autónoma de Sinaloa  
+- **Materia:** Geografía  
+- **Profesor:** Ing. Erick Iván Sánchez Valdez  
+
