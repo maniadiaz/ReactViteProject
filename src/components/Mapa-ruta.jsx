@@ -1,4 +1,4 @@
-import { Box, Typography, Container,Button } from "@mui/material";
+import { Box, Typography, Container, Button } from "@mui/material";
 import {GoogleMap,Marker,InfoWindow,DirectionsService,DirectionsRenderer,useJsApiLoader} from "@react-google-maps/api";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
@@ -47,7 +47,44 @@ const MapaConRuta = () => {
 
   return shouldLoad ? (
     <Container maxWidth={false}>
-      <Box mt={5}
+      <Box
+        sx={{
+          width: "100%",
+          p: 6,
+          mb: 4,
+          boxShadow: 3,
+          borderRadius: 4,
+          backgroundColor: "#f5f5f5",
+        }}
+      >
+        <Typography color="black" variant="h4" gutterBottom>
+          Actividad 2
+        </Typography>
+        <Typography color="black" variant="h6" gutterBottom>
+          Trazado de ruta entre dos puntos con la API de Google Maps
+        </Typography>
+        <Typography color="black" paragraph>
+          En esta actividad se aprenderá a calcular y visualizar una ruta entre dos ubicaciones usando la API de Google Maps con React. Se utilizará el componente <code>DirectionsService</code> para generar la ruta y <code>DirectionsRenderer</code> para mostrarla gráficamente en el mapa.
+        </Typography>
+        <Typography color="black" variant="subtitle1" gutterBottom>
+          Pasos para implementar la ruta:
+        </Typography>
+        <Typography color="black" component="div">
+          <ul>
+            <li>Definir los puntos de origen y destino con coordenadas geográficas.</li>
+            <li>Configurar y cargar la API con las bibliotecas necesarias.</li>
+            <li>Usar <code>DirectionsService</code> para solicitar la ruta entre los dos puntos.</li>
+            <li>Visualizar la ruta usando <code>DirectionsRenderer</code>.</li>
+            <li>Colocar marcadores en los puntos A (origen) y B (destino).</li>
+          </ul>
+        </Typography>
+        <Typography color="black" variant="subtitle1" gutterBottom>
+          Resultado:
+        </Typography>
+      </Box>
+
+      <Box
+        mt={5}
         sx={{
           width: "100%",
           p: 6,
@@ -56,7 +93,7 @@ const MapaConRuta = () => {
           backgroundColor: "white",
         }}
       >
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography color="black" variant="h4" align="center" gutterBottom>
           Ruta desde la Facultad a otro punto
         </Typography>
 
@@ -83,9 +120,10 @@ const MapaConRuta = () => {
           <Marker position={destino} label="B" />
         </GoogleMap>
       </Box>
+
       <Box mt={2}>
-        <Button mt={2}
-          variant="contained" 
+        <Button
+          variant="contained"
           color="primary"
           onClick={() => navigate("/work")}
         >

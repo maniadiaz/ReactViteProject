@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { GoogleMap, DrawingManager, useJsApiLoader } from '@react-google-maps/api';
-import { Box, Container, Button } from "@mui/material";
+import { Box, Container, Button, Typography } from "@mui/material";
 import { googleMapsLibraries } from "./googleMapsConfig";
 import { useNavigate } from "react-router-dom";
 
@@ -14,13 +14,11 @@ const center = {
   lng: -106.4265313
 };
 
-const libraries = ['drawing'];
-
 const MapDrawing = () => {
   const [controlPosition, setControlPosition] = useState(null);
   const [shouldLoad, setShouldLoad] = useState(false);
   const shapesRef = useRef([]);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (window.google && window.google.maps) {
@@ -66,8 +64,37 @@ const MapDrawing = () => {
 
   return shouldLoad ? (
     <Container maxWidth="md" sx={{ textAlign: "center", mt: 5 }}>
+      <Box sx={{ width: '100%', p: 6, mb: 4, boxShadow: 3, borderRadius: 4, backgroundColor: '#f5f5f5' }}>
+        <Typography color='black' variant="h4" gutterBottom>
+          Actividad 4
+        </Typography>
+        <Typography color='black' variant="h6" gutterBottom>
+          Dibujo de polígonos y formas con Google Maps
+        </Typography>
+        <Typography color='black' paragraph>
+          En esta actividad se implementa la herramienta de dibujo provista por la API de Google Maps mediante el componente <code>DrawingManager</code>. Esto permite a los usuarios crear formas como polígonos, rectángulos y líneas sobre el mapa de forma interactiva.
+        </Typography>
+        <Typography color='black' variant="subtitle1" gutterBottom>
+          Pasos para implementar el dibujo:
+        </Typography>
+        <Typography color='black' component="div">
+          <ul>
+            <li>Cargar la API con la biblioteca <code>drawing</code>.</li>
+            <li>Configurar la posición del control de dibujo.</li>
+            <li>Activar las herramientas de polígonos, rectángulos y líneas.</li>
+            <li>Manejar los eventos <code>onPolygonComplete</code>, <code>onRectangleComplete</code> y <code>onPolylineComplete</code>.</li>
+            <li>Ofrecer la opción de eliminar todas las formas dibujadas.</li>
+          </ul>
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          Resultado:
+        </Typography>
+      </Box>
+
       <Box>
-        <h1>Mapa con Herramientas de Dibujo</h1>
+        <Typography variant="h4" gutterBottom>
+          Mapa con Herramientas de Dibujo
+        </Typography>
         <Button variant="contained" color="error" onClick={handleClearShapes} sx={{ mb: 2 }}>
           Eliminar todas las formas
         </Button>
@@ -93,9 +120,10 @@ const MapDrawing = () => {
           )}
         </GoogleMap>
       </Box>
+
       <Box mt={2}>
-        <Button mt={2}
-          variant="contained" 
+        <Button
+          variant="contained"
           color="primary"
           onClick={() => navigate("/work")}
         >

@@ -15,7 +15,7 @@ function Mapa() {
   const navigate = useNavigate();
   const [infoOpen, setInfoOpen] = useState(false);
   const [shouldLoad, setShouldLoad] = useState(false);
-  
+
   useEffect(() => {
     if (window.google && window.google.maps) {
       setShouldLoad(true);
@@ -45,12 +45,48 @@ function Mapa() {
         sx={{
           width: "100%",
           p: 6,
+          mb: 4,
+          boxShadow: 3,
+          borderRadius: 4,
+          backgroundColor: "#f5f5f5",
+        }}
+      >
+        <Typography color="black" variant="h4" gutterBottom>
+          Actividad 1
+        </Typography>
+        <Typography color="black" variant="h6" gutterBottom>
+          Generación de mapa con la API de Google
+        </Typography>
+        <Typography color="black" paragraph>
+          En esta actividad se aprenderá a integrar un mapa interactivo utilizando la API de Google Maps dentro de una aplicación React. El objetivo es mostrar una ubicación específica (Facultad de Informática Mazatlán) con un marcador y una ventana de información.
+        </Typography>
+        <Typography color="black" variant="subtitle1" gutterBottom>
+          Pasos para implementar el mapa:
+        </Typography>
+        <Typography color="black" component="div">
+          <ul>
+            <li>Obtener una clave de API de Google Maps y habilitar las bibliotecas necesarias.</li>
+            <li>Instalar el paquete <code>@react-google-maps/api</code>.</li>
+            <li>Configurar el cargador de scripts usando <code>useJsApiLoader</code>.</li>
+            <li>Crear el componente con <code>GoogleMap</code>, <code>Marker</code> e <code>InfoWindow</code>.</li>
+            <li>Mostrar la ubicación deseada y agregar interactividad al marcador.</li>
+          </ul>
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          Resultado:
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          width: "100%",
+          p: 6,
           boxShadow: 3,
           borderRadius: 4,
           backgroundColor: "white",
         }}
       >
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography color="black" variant="h4" align="center" gutterBottom>
           Mapa interactivo
         </Typography>
 
@@ -81,9 +117,10 @@ function Mapa() {
           )}
         </GoogleMap>
       </Box>
-      <Box>
-        <Button mt={2}
-          variant="contained" 
+
+      <Box mt={2}>
+        <Button
+          variant="contained"
           color="primary"
           onClick={() => navigate("/work")}
         >
