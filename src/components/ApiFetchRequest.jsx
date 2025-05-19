@@ -45,7 +45,7 @@ function ApiFetchRequest() {
           </Table>
         </TableContainer>
       </Box>
-      <Box>
+      <Box mt={2} textAlign="center">
         <Button mt={2}
           variant="contained" 
           color="primary"

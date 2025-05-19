@@ -19,10 +19,10 @@ function EventoBoton() {
             <Box>
                 <Typography variant="h4">Contador</Typography>
                 <Typography variant="h6">{count}</Typography>
-                <Button mt={2} variant="contained" onClick={() => setCount(count + 1)}>Incrementar</Button>
+                <Button mt={2}  variant="contained" onClick={() => setCount(count + 1)}>Incrementar</Button>
                 <Button mt={2} variant="contained" onClick={() => setCount(count - 1)}>Decrementar</Button>
             </Box>
-            <Box>
+            <Box mt={2}>
             <Button mt={2}
                 variant="contained" 
                 color="primary"

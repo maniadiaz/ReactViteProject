@@ -36,13 +36,16 @@ function UserProfile() {
                 <Typography variant="h6" align="center" color="black">
                     Nombre de usuario: {user}
                 </Typography>
-                <Button mt={2}
-                    variant="contained"
-                    color="primary"
-                    onClick={() => navigate("/work")}
-                >
-                    Regresar a los proyectos
-                </Button>
+                
+                 <Box mt={2} textAlign="center">
+                    <Button mt={2}
+                        variant="contained" 
+                        color="primary"
+                        onClick={() => navigate("/work")}
+                    >
+                        Regresar a los proyectos
+                    </Button>
+                 </Box>
             </Box>
         </Container>
     );

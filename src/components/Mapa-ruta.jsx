@@ -47,7 +47,7 @@ const MapaConRuta = () => {
 
   return shouldLoad ? (
     <Container maxWidth={false}>
-      <Box
+      <Box mt={5}
         sx={{
           width: "100%",
           p: 6,
@@ -83,7 +83,7 @@ const MapaConRuta = () => {
           <Marker position={destino} label="B" />
         </GoogleMap>
       </Box>
-      <Box>
+      <Box mt={2}>
         <Button mt={2}
           variant="contained" 
           color="primary"

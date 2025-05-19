@@ -71,7 +71,7 @@ const MapaConClustering = () => {
           </MarkerClustererF>
         </GoogleMap>
       </Box>
-      <Box>
+      <Box mt={2}>
         <Button mt={2}
           variant="contained" 
           color="primary"

@@ -14,7 +14,7 @@ function Actividad04() {
                 Creado con React y Vite
             </Typography>
         <Box mt={2}>
-            <Button 
+            <Button
                 variant="contained" 
                 color="primary"
                 onClick={() => navigate("/work")}
