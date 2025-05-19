@@ -69,6 +69,21 @@ function Work() {
                     </CardActions>
                 </Card>
                 
+                <Card sx={{ width: 300, m: 1 }} elevation={3}>
+                    <CardContent>
+                        <Typography variant="h6">
+                            Actividad 5 - Mapa Ruta
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" mt={1}>
+                            Actividad de generar un mapa con el uso de la API de Google Maps, en la cual se puede ver la ruta entre dos puntos y volver a recalcular.
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/MapRuta"}>
+                            Ir a la actividad
+                        </Button>
+                    </CardActions>
+                </Card>
             </Box>
         </Container>
     );

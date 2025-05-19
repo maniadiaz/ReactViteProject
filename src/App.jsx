@@ -10,6 +10,7 @@ import Mapa from './components/Mapa-google'
 import MapaRuta from './components/Mapa-ruta'
 import MapaConClustering from './components/MarkerConClustering'
 import MapDrawing from './components/MapDrawing'
+import MapRuta from './components/MapRuta'
 import './App.css'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/mapaRuta" element={<MapaRuta />} />
             <Route path="/mapaConClustering" element={<MapaConClustering />} />
             <Route path="/MapDrawing" element={<MapDrawing />} />
+            <Route path="/MapRuta" element={<MapRuta />} />
           </Routes>
         </Box>
     </Container>
