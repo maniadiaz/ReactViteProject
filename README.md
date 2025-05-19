@@ -1,6 +1,6 @@
 #  Proyecto React - Enrutamiento y Navegación
 
-Este proyecto es una práctica para aprender a utilizar **React** junto con **React Router**, integrando navegación entre distintas páginas, componentes reutilizables y control de versiones con GitHub. Ademas se agrego la utilizacioón de **React Google Maps Api** para poder ubicar la Facultad de Informactica de la UAS Mazatlán
+Este proyecto es una práctica para aprender a utilizar **React** junto la utilizacioón de **React Google Maps Api** para poder ubicar la Facultad de Informactica de la UAS Mazatlán, Trazar rutas, hacer Marker con Clustering y Mapa con Drawing
 
 ---
 
