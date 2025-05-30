@@ -23,13 +23,6 @@ function Home(){
       />
 
       {}
-      <Button mt={2}
-        variant="contained" 
-        color="primary"
-        onClick={() => navigate("/work")}
-      >
-        Mira mi trabajo
-      </Button>
 
       <Box mt={5} display="flex" justifyContent="flex-start" gap={2} flexWrap="wrap">
 
