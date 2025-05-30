@@ -7,12 +7,12 @@ function Home(){
     <Container maxWidth="md" sx={{ textAlign: "center", mt: 5 }}>
       {}
       <Typography variant="h3" gutterBottom>
-        Bienvenido a mi Proyecto
+        Utilización de Apis de Google Maps
       </Typography>
 
       {}
       <Typography variant="body1" sx={{ mb: 3 }}>
-        Explora nuestras secciones y descubre todo lo que tenemos para ofrecerte.
+        Creado por Diaz Diaz Miguel Alexis.
       </Typography>
 
       {}
