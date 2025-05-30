@@ -5,7 +5,7 @@ function Navbar() {
     <AppBar >
       <Toolbar>
         <Typography variant="h6" >
-          Pagina de Geografia
+          No compila - Api Google Maps
         </Typography>
         <Button color="inherit" component={Link} to="/">
           Inicio
