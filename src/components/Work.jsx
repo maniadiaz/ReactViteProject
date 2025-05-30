@@ -15,7 +15,7 @@ function Work() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/mapa"}>
+                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/ReactViteProject/mapa"}>
                             Ir a la actividad
                         </Button>
                     </CardActions>
@@ -31,7 +31,7 @@ function Work() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/mapaRuta"}>
+                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/ReactViteProject/mapaRuta"}>
                             Ir a la actividad
                         </Button>
                     </CardActions>
@@ -47,7 +47,7 @@ function Work() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/mapaConClustering"}>
+                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/ReactViteProject/mapaConClustering"}>
                             Ir a la actividad
                         </Button>
                     </CardActions>
@@ -63,7 +63,7 @@ function Work() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/MapDrawing"}>
+                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/ReactViteProject/MapDrawing"}>
                             Ir a la actividad
                         </Button>
                     </CardActions>
@@ -79,7 +79,7 @@ function Work() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/MapRuta"}>
+                        <Button variant="contained" color="primary" fullWidth onClick={() => window.location.href = "/ReactViteProject/MapRuta"}>
                             Ir a la actividad
                         </Button>
                     </CardActions>

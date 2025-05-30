@@ -122,7 +122,7 @@ function Mapa() {
         <Button
           variant="contained"
           color="primary"
-          onClick={() => navigate("/work")}
+          onClick={() => navigate("/ReactViteProject/work")}
         >
           Regresar a los proyectos
         </Button>

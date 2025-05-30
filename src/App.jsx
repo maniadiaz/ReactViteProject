@@ -22,15 +22,15 @@ function App() {
         </Box>
         <Box>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/mapa" element={<Mapa />} />
-            <Route path="/mapaRuta" element={<MapaRuta />} />
-            <Route path="/mapaConClustering" element={<MapaConClustering />} />
-            <Route path="/MapDrawing" element={<MapDrawing />} />
-            <Route path="/MapRuta" element={<MapRuta />} />
+            <Route path="/ReactViteProject/" element={<Home />} />
+            <Route path="/ReactViteProject/bout" element={<About />} />
+            <Route path="/ReactViteProject/contact" element={<Contact />} />
+            <Route path="/ReactViteProject/work" element={<Work />} />
+            <Route path="/ReactViteProject/mapa" element={<Mapa />} />
+            <Route path="/ReactViteProject/mapaRuta" element={<MapaRuta />} />
+            <Route path="/ReactViteProject/mapaConClustering" element={<MapaConClustering />} />
+            <Route path="/ReactViteProject/MapDrawing" element={<MapDrawing />} />
+            <Route path="/ReactViteProject/MapRuta" element={<MapRuta />} />
           </Routes>
         </Box>
     </Container>
