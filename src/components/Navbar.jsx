@@ -7,16 +7,16 @@ function Navbar() {
         <Typography variant="h6" >
           Pagina de Geografia
         </Typography>
-        <Button color="inherit" component={Link} to="/ReactViteProject/">
+        <Button color="inherit" component={Link} to="/">
           Inicio
         </Button>
-        <Button color="inherit" component={Link} to="/ReactViteProject/about">
+        <Button color="inherit" component={Link} to="/about">
           Sobre Nosotros
         </Button>
-        <Button color="inherit" component={Link} to="/ReactViteProject/contact">
+        <Button color="inherit" component={Link} to="/contact">
           Contacto
         </Button>
-        <Button color="inherit" component={Link} to="/ReactViteProject/work">
+        <Button color="inherit" component={Link} to="/work">
           Trabajo
         </Button>
       </Toolbar>

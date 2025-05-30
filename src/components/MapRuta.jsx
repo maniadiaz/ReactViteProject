@@ -178,7 +178,7 @@ const MapRuta = () => {
         <Button
           variant="contained"
           color="primary"
-          onClick={() => navigate("/ReactViteProject/work")}
+          onClick={() => navigate("/work")}
         >
           Regresar a los proyectos
         </Button>
